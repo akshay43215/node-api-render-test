@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from "express";
 import createHttpError from "http-errors";
-import userModel from "./userModel";
-import { User } from "./userTypes";
+import userModel from "./userModel.js"; 
+import { User } from "./userTypes.js";
 import jwt from 'jsonwebtoken';
 import bcrypt from "bcrypt";
-import { config } from "../config/config";
+import { config } from "../config/config.js";
 
 //create user -----------
 export const createUser = async(req:Request, res:Response, next:NextFunction)=> {

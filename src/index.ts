@@ -1,6 +1,6 @@
 import express from 'express'
-import { globalErrorHandler } from './middleware/globalErrorHandler';
-import { userRouter } from './user/userRoute';
+import { globalErrorHandler } from './middleware/globalErrorHandler.js';
+import { userRouter } from './user/userRoute.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
